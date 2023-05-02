@@ -1,6 +1,4 @@
 """
-Download the clips within the MusicCaps dataset from YouTube.
-
 Requires:
     - ffmpeg
     - yt-dlp
@@ -53,16 +51,6 @@ def main(
     num_proc: int = 1,
     writer_batch_size: int = 1000,
 ):
-    """
-    Download the clips within the MusicCaps dataset from YouTube.
-
-    Args:
-        data_dir: Directory to save the clips to.
-        sampling_rate: Sampling rate of the audio clips.
-        limit: Limit the number of examples to download.
-        num_proc: Number of processes to use for downloading.
-        writer_batch_size: Batch size for writing the dataset. This is per process.
-    """
 
     ds = load_dataset('google/MusicCaps', split='train')
     if limit is not None:
