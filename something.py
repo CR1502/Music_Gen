@@ -3,7 +3,7 @@ import torch.nn as nn
 from musiclm_pytorch import MusicLM
 
 # Load the tokenized data
-data = torch.load("tokenized_data.pt")
+data = torch.load("tokenized_texts.pt")
 
 # Define the parameters for the language model
 input_size = len(data.vocab)
