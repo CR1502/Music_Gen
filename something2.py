@@ -4,8 +4,8 @@ from musiclm_pytorch.data import MusicDataset
 from musiclm_pytorch.model import MusicTransformerLM
 
 # Define the paths to the pre-trained model and the Indian music dataset
-pretrained_model_path = 'path/to/pretrained/model'
-indian_music_dataset_path = 'path/to/indian/music/dataset'
+pretrained_model_path = 'Musiclm_model.py'
+indian_music_dataset_path = 'musiccaps-public.csv'
 
 # Define the hyperparameters for fine-tuning
 batch_size = 16
@@ -61,4 +61,4 @@ for epoch in range(num_epochs):
     print('Epoch {} - Training Loss: {:.4f} - Validation Loss: {:.4f}'.format(epoch+1, train_loss, val_loss))
     
 # Save the fine-tuned model
-model.save_pretrained('path/to/fine-tuned/model')
+model.save_pretrained('Musiclm_model.py')
