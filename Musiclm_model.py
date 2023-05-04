@@ -6,7 +6,7 @@ from musiclm_pytorch import MusicLM
 data = torch.load("tokenized_texts.pt")
 
 # Define the parameters for the language model
-input_size = len(data)
+input_size = 5521
 hidden_size = 512
 num_layers = 2
 dropout = 0.2
