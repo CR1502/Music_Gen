@@ -39,7 +39,7 @@ for epoch in range(num_epochs):
         
         # Print the loss every 100 iterations
         if i % 100 == 0:
-            print(f"Epoch [{epoch+1}/{num_epochs}], Step [{i}/{len(data)}], Loss: {loss.item():.4f}")
+            print(f"Epoch [{epoch+1}/{num_epochs}], Step [{i}/{5521}], Loss: {loss.item():.4f}")
             
 # Save the trained model
 torch.save(model.state_dict(), "musiclm_model.pt")
